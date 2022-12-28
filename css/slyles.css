@@ -4,11 +4,16 @@
     --header-text: #2E2F42;
     --acent-color: #4D5AE5;
     --contrast-color-of-text: #FFFFFF;
+    --hover-focus-color: #404BBF;
+    --overlays-shadows-headings: #2E2F42;
+    --light-background: #F4F4FD;
+
 }
 
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    color: var(--main-text);
 }
 
 .link {
@@ -20,6 +25,10 @@ body {
 }
 
 /* header */
+.header {
+    background-color: #FFFFFF;
+}
+
 .header-logo {
     font-family: 'Raleway';
     font-weight: 800;
@@ -44,6 +53,11 @@ body {
     color: var(--header-text);
 }
 
+.header-link:hover,
+.header-link:focus {
+    color:  var(--hover-focus-color);
+}
+
 .contacts-email,
 .contacts-phone {
     font-style: normal;
@@ -51,12 +65,19 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     
-    color: var(--main-text)
+    color: var(--main-text);
+}
+
+.contacts-email:hover,
+.contacts-email:focus,
+.contacts-phone:hover,
+.contacts-phone:focus {
+color: var(--hover-focus-color);
 }
 
 /* hero */
 .hero {
-    background-color: grey;
+    background-color: var(--overlays-shadows-headings);
 }
 
 .hero-title {
@@ -79,6 +100,13 @@ body {
 
     background-color: var(--acent-color);
     color: var(--contrast-color-of-text);
+
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hover-focus-color);
 }
 
 /* values */
@@ -112,17 +140,12 @@ body {
     letter-spacing: 0.02em;
 
     color: var(--header-text);
-
-
 }
 
 .values-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
-    color: var(--main-text);
-
 }
 
 /* services */
@@ -156,7 +179,7 @@ body {
 
 /* team */
 .team {
-
+background-color: var(--light-background);
 }
 
 .team-title {
@@ -202,13 +225,11 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
 
-    color: var(--main-text);
-
 }
 
 /* footer */
 .footer {
-
+background-color: var(--overlays-shadows-headings);
 }
 
 .footer-logo {
