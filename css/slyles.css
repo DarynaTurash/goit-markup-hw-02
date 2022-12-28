@@ -7,6 +7,7 @@
     --hover-focus-color: #404BBF;
     --overlays-shadows-headings: #2E2F42;
     --light-background: #F4F4FD;
+    --sutle-backgrounds: #E7E9FC;
 
 }
 
@@ -249,6 +250,73 @@ background-color: var(--overlays-shadows-headings);
 
     color: #E7E9FC;
 }
+
+/* portfolio */
+
+/* works-buttons (filters) */
+.works {
+
+}
+
+.works-title {
+
+}
+
+.works-list {
+
+}
+
+.works-item {
+
+}
+
+.works-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--acent-color);
+    background-color: var(--sutle-backgrounds);
+}
+
+.works-btn:hover,
+.works-btn:focus {
+    color: var(--contrast-color-of-text);
+    background-color: var(--hover-focus-color);
+}
+
+/* works-cards */
+.works-cards
+
+.card
+
+.card-link {
+    color: var(--header-text)
+}
+
+.card-img
+
+.card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1,2;
+    letter-spacing: 0.02em;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--main-text);
+
+}
+
+
 
 
 
